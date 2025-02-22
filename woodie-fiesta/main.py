@@ -12,7 +12,7 @@ tree_counter = 0
 while True:
   for index in range(61):
     while True:
-      position_in_map = pyautogui.locateOnScreen('assets/icons/icon_{}.png'.format(index), confidence=0.90, region=REGION_MINIMAP)
+      position_in_map = locateOnScreen('assets/icons/icon_{}.png'.format(index), confidence=0.90, region=REGION_MINIMAP)
       print('waypoint: {}'.format(index))
       if position_in_map != None:
         move_and_click(position_in_map)
@@ -21,13 +21,13 @@ while True:
         eat_food()
         sleep(0.5)
         print('Harvested trees: {}'.format(tree_counter))
-        check_position = pyautogui.locateOnScreen('assets/icons/icon_{}.png'.format(index), confidence=0.90, region=REGION_MINIMAP)
+        check_position = locateOnScreen('assets/icons/icon_{}.png'.format(index), confidence=0.90, region=REGION_MINIMAP)
         if check_position == None:
           tree_counter += 1
           for position in list_positions:
             for index in range(8):
               while True:
-                tree = pyautogui.locateOnScreen('assets/trees/tree_{}.PNG'.format(index), confidence=0.7, region=position)
+                tree = locateOnScreen('assets/trees/tree_{}.PNG'.format(index), confidence=0.7, region=position)
                 if tree != None:
                   get_tree(tree)
                 else:
