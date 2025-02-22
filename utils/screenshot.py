@@ -10,7 +10,7 @@ class Photo:
     self.count = 0
 
   def take_photo(self, x, y):
-    my_screen = pyautogui.screenshot(region=(x - 10, y -10, 20, 20))
+    my_screen = screenshot(region=(x - 10, y -10, 20, 20))
     path = 'icons/icon_{}.png'.format(self.count)
     self.count = self.count + 1
     my_screen.save(path)
