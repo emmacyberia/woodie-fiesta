@@ -6,4 +6,4 @@ from time import sleep
 # Function to locate the (left, top) position of each image
 while True:
     # Mouse position
-    print(pyautogui.position())
+    print(position())
