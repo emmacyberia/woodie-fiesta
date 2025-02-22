@@ -1,3 +1,6 @@
+# define core variables
+tree_counter = 0
+
 # positions of the tree based on character position
 right = (1264,426,60,60)
 left = (1198,425,60,60)
