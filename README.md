@@ -1,6 +1,6 @@
 # woodie-fiesta
 
-Automated lumberjacking in [Darkrest Online](https://darkrest.online/?news).
+Automated lumberjack for [Darkrest Online](https://darkrest.online/?news).
 
 Continuously search for map waypoints using image recognition to gather wood.
 
