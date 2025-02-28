@@ -10,29 +10,35 @@ Features include: `auto lumberjack` and `mana trainer`.
 
 ![](docs/images/woodie-fiesta.PNG)
 
-## Requirements
-
-```bash
-pip install pyautogui
-pip install keyboard
-pip install Pillow
-pip install opencv-python
-```
-
 ## Usage
 
-```python
-# Positions of the tree based on character position
-right = (1264,426,60,60)    # tree is on the right of character
-left = (1198,425,60,60)     # tree is on the left of character
-top = (1231,393,60,60)      # tree is on the top of character
-bot = (1231,458,60,60)      # tree is on the bottom of character
+### Prerequisites
 
-# Static positions
-AXE = (1546, 551)
-MANA = (1880, 235, 35, 22)
-FOOD = (1583, 549)
-MINIMAP = (1728, 31, 183, 182)
+>[!NOTE]
+>Ensure that you have [Conda](https://www.anaconda.com/download/) installed on your system.
+
+```bash
+# clone this repository
+git clone https://github.com/emmacyberia/woodie-fiesta.git
+
+cd woodie-fiesta
+
+# create a conda environment and install dependencies
+conda env create -f environment.yml
+
+# activate the environment
+conda activate woodie-fiesta
+```
+
+>[!NOTE]
+>Before running, ensure that the configuration file is set up properly.
+>Edit the [configuration file](https://github.com/emmacyberia/woodie-fiesta/blob/env/woodie-fiesta/core/config.py) to match your desired settings.
+
+### Run woodie-fiesta
+
+```bash
+# run the lumberjack bot
+python woodie-fiesta/main.py
 ```
 
 >[!NOTE]
