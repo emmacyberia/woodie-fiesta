@@ -24,7 +24,7 @@ git clone https://github.com/emmacyberia/woodie-fiesta.git
 cd woodie-fiesta
 
 # create a conda environment and install dependencies
-conda env create -f environment.yml
+conda env create --name woodie-fiesta -f environment.yml
 
 # activate the environment
 conda activate woodie-fiesta
