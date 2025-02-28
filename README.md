@@ -32,7 +32,7 @@ conda activate woodie-fiesta
 
 >[!NOTE]
 >Before running, ensure that the configuration file is set up properly.
->Edit the [configuration file](https://github.com/emmacyberia/woodie-fiesta/blob/env/woodie-fiesta/core/config.py) to match your desired settings.
+>Edit the [configuration file](https://github.com/emmacyberia/woodie-fiesta/blob/main/woodie-fiesta/core/config.py) to match your desired settings.
 
 ### Run woodie-fiesta
 
